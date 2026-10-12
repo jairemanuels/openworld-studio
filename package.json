@@ -1,0 +1,30 @@
+{
+  "name": "openworld-studio",
+  "version": "0.1.0",
+  "description": "Open-source, browser-based graphic design editor. Templates, text, shapes, images, layers, pages, PNG and PDF export.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jaïr Emanuels / Nodient",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jairemanuels/openworld-studio.git"
+  },
+  "homepage": "https://jairemanuels.github.io/openworld-studio/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "deploy": "npm run build && gh-pages -d dist --dotfiles"
+  },
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "konva": "^10.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}
